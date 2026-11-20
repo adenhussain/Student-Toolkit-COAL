@@ -1,0 +1,16 @@
+# Build output and Visual Studio files
+bin/
+obj/
+.vs/
+*.user
+
+# Student data created when the program runs (encrypted .dat files and logs)
+data/
+
+# Documents, exports and media (submitted separately on Google Drive)
+*.docx
+*.pdf
+*.mp4
+*.zip
+*.xml
+voice/

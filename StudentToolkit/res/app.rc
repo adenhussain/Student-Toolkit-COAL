@@ -1,0 +1,74 @@
+// app.rc - resources for Student Toolkit: icon, menu bar, version info
+// IDs must match the constants in include\app.inc
+#define VK_F1 0x70
+
+#define IDI_APPICON     101
+#define IDR_MAINMENU    102
+#define IDR_ACCEL       103
+
+#define IDM_SAVE        201
+#define IDM_EXPORT_XLS  202
+#define IDM_EXPORT_CSV  203
+#define IDM_EXPORT_TT   204
+#define IDM_LOGOUT      205
+#define IDM_EXIT        206
+#define IDM_HELP        207
+#define IDM_ABOUT       208
+#define IDM_VIEWLOG     209
+
+IDI_APPICON ICON "app.ico"
+
+IDR_MAINMENU MENU
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Save\tCtrl+S",               IDM_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "Export report to &Excel...",  IDM_EXPORT_XLS
+        MENUITEM "Export report to &CSV...",    IDM_EXPORT_CSV
+        MENUITEM "Export &timetable...",        IDM_EXPORT_TT
+        MENUITEM SEPARATOR
+        MENUITEM "View activity &log",          IDM_VIEWLOG
+        MENUITEM "&Log out",                    IDM_LOGOUT
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Help\tF1",                   IDM_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "&About Student Toolkit",      IDM_ABOUT
+    END
+END
+
+// Keyboard shortcuts for the main window
+IDR_ACCEL ACCELERATORS
+BEGIN
+    "S", IDM_SAVE, VIRTKEY, CONTROL
+    VK_F1, IDM_HELP, VIRTKEY
+END
+
+1 VERSIONINFO
+FILEVERSION     1,0,0,0
+PRODUCTVERSION  1,0,0,0
+FILEOS          0x40004
+FILETYPE        0x1
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName",      "FAST-NUCES Karachi - COAL Lab"
+            VALUE "FileDescription",  "Student Toolkit"
+            VALUE "FileVersion",      "1.0"
+            VALUE "InternalName",     "StudentToolkit"
+            VALUE "OriginalFilename", "StudentToolkit.exe"
+            VALUE "ProductName",      "Student Toolkit"
+            VALUE "ProductVersion",   "1.0"
+            VALUE "LegalCopyright",   "Aden Hussain, Javaria Ahmed Shaikh"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END

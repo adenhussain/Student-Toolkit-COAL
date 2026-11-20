@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="src\main.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\ui.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\gfx.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\theme.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\data.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\controls.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\login.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\grades_table.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\numbers.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\courses.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\course_dialog.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\dates.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\deadlines.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\deadline_dialog.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\pin_dialog.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\grade_calc.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\grades.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\planner.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\stats.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\tray.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\pomodoro.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\mini_timer.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\dashboard.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\activity.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\export.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\splash.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\settings.asm"><Filter>Source Files</Filter></MASM>
+    <MASM Include="src\focus_guard.asm"><Filter>Source Files</Filter></MASM>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="include\app.inc"><Filter>Include Files</Filter></None>
+    <None Include="include\win32gui.inc"><Filter>Include Files</Filter></None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="res\app.rc"><Filter>Resource Files</Filter></ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\app.ico"><Filter>Resource Files</Filter></Image>
+  </ItemGroup>
+</Project>
